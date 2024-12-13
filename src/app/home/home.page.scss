@@ -1,0 +1,100 @@
+ion-content {
+  --background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+    no-repeat center center / cover;
+}
+
+ion-header {
+  --background: #003366; /* Azul oscuro */
+}
+
+ion-toolbar {
+  --background: #003366; /* Azul oscuro */
+  color: white;
+}
+
+ion-title {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Centralizar todas las cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+ion-card {
+  width: 90%;  /* Controla el ancho de las cards */
+  max-width: 900px;  /* Tamaño máximo */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco desvanecido */
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Estilo de la card de bienvenida */
+.welcome-card {
+  background: #003366; /* Fondo azul oscuro */
+  color: white;
+  text-align: center;
+}
+
+.welcome-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.welcome-card p {
+  font-size: 16px;
+  color: white;
+}
+
+/* Card de curso */
+.curso-card {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco desvanecido */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Centra las cards */
+}
+
+.curso-card-content {
+  display: flex;
+  justify-content: space-between; /* El botón y el contenido se alinean a los extremos */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+ion-label {
+  width: 70%; /* El contenido del curso ocupará el 70% del espacio */
+  text-align: left; /* Alinear texto a la izquierda */
+  font-size: 18px;
+  color: #333;
+}
+
+ion-label h2, ion-label h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+ion-button {
+  --background: #003366; /* Azul oscuro */
+  font-weight: bold;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+ion-button:hover {
+  opacity: 0.9;
+}

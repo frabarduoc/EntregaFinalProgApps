@@ -1,0 +1,63 @@
+ion-content {
+  --background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), 
+    url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+    no-repeat center center / cover;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px; /* Tamaño máximo */
+  width: 100%; /* Controla el ancho de la caja de login */
+  text-align: center;
+}
+
+.login-header h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #003366; /* Azul oscuro para el título */
+}
+
+.login-header p {
+  margin-bottom: 20px;
+  color: #666; /* Color gris para el texto secundario */
+}
+
+.custom-input ion-input {
+  color: #003366; /* Texto en azul oscuro para los inputs */
+}
+
+ion-item.custom-input {
+  --background: transparent;
+  margin-bottom: 20px;
+}
+
+ion-item.custom-input ion-label {
+  color: #003366; /* Azul oscuro para las etiquetas de Usuario y Contraseña */
+}
+
+ion-item.custom-input ion-label.ion-focused {
+  color: #003366; /* Azul oscuro cuando el input está enfocado */
+}
+
+ion-button {
+  background-color: #003366; /* Fondo azul oscuro para el botón */
+  color: white; /* Texto blanco */
+  border-radius: 50px; /* Bordes redondeados para el botón */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px; /* Espacio arriba del botón */
+}

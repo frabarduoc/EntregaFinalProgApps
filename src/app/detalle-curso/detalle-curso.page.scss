@@ -1,0 +1,88 @@
+ion-content {
+  --background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+    no-repeat center center / cover;
+}
+
+.header {
+  --background: #003366; /* Azul oscuro */
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+ion-card {
+  width: 90%;  /* Controla el ancho de las cards */
+  max-width: 900px;  /* Tamaño máximo */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco desvanecido */
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+/* Estilo de la card de información del curso */
+.curso-info-card {
+  background: rgba(255, 255, 255, 0.9);
+  text-align: left; /* Alinear texto a la izquierda */
+  padding: 20px;
+}
+
+.curso-info-card h2, .curso-info-card h3 {
+  color: #003366; /* Azul oscuro */
+}
+
+/* Estilo de la card de alumnos */
+.alumnos-card {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco desvanecido */
+  padding: 20px;
+}
+
+.alumnos-card h2 {
+  text-align: center;
+  color: #003366; /* Azul oscuro */
+}
+
+ion-list {
+  background: rgba(255, 255, 255, 1); /* Fondo blanco */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+ion-item {
+  --background: transparent; /* Hacer que el item no tenga fondo */
+  padding: 10px 0;
+}
+
+.alumno-nombre {
+  color: #003366; /* Azul oscuro */
+  font-size: 18px; /* Tamaño de fuente de los nombres */
+}
+
+ion-alert {
+  .alert-message {
+    h2 {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+.estado-circle {
+  display: inline-block; /* Asegúrate de que el círculo se muestre en línea */
+  width: 20px;          /* Ancho del círculo */
+  height: 20px;         /* Alto del círculo */
+  border-radius: 50%;   /* Hace que el elemento sea un círculo */
+  margin-right: 8px;    /* Espacio a la derecha del círculo */
+}

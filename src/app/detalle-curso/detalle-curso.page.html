@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header">
+    <ion-title>
+      Detalle del Curso:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="card-container">
+    <ion-card class="curso-info-card">
+      <ion-card-content>
+        <h2>Bienvenido Profesor <br><br>
+          1 = Presente<br>
+          0 = Ausente
+        </h2>
+      </ion-card-content>
+    </ion-card><h2>Información del Curso</h2>
+    
+
+    <ion-card class="alumnos-card">
+      <ion-card-content>
+        <h2>Listado de Alumnos</h2>
+        <ion-list>
+          <ion-item *ngFor="let alumno of alumnos">
+            <ion-col>{{alumno.id}}</ion-col>
+            <ion-col>{{alumno.nombre}}</ion-col>
+            <ion-col>
+              <span [ngStyle]="{'backgroun-color': alumno.status === 1 ? 'green' : 'red'}" class="estado-circle"></span>
+                {{alumno.status}}
+            </ion-col>
+
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
